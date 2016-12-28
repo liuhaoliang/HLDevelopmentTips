@@ -1,0 +1,6 @@
+//动态计算文字高度
+ CGRect rect =[statusContent boundingRectWithSize:CGSizeMake(300, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17]} context:nil];
+ return ceilf(rect.size.height);
+ 
+ //动态计算文字宽度
+ CGSize size = [content sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:24.0]}];

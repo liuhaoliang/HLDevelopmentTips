@@ -1,0 +1,1 @@
+compileSource选中文件然后双击并在输入框中输入：-fobjc-arc，如果不要ARC则输入：-fno-objc-arc  

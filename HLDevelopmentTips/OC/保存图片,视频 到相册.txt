@@ -1,0 +1,26 @@
+
+
+//保存滤镜后的图片到本地相册
+   - (void)saveAction:(UIButton *)sender{
+       UIImageWriteToSavedPhotosAlbum(myImageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+   }
+
+   //保存成功调用的方法
+   - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo{
+       NSLog(@"保存成功");
+   }
+
+
+
+//视频录入完成之后在后台将视频存储到相簿
+
+    ALAssetsLibrary *assetsLibrary=[[ALAssetsLibrary alloc]init];
+    [assetsLibrary writeVideoAtPathToSavedPhotosAlbum:outputFileURL completionBlock:^(NSURL *assetURL, NSError *error) {
+        if (error) {
+            NSLog(@"保存视频到相簿过程中发生错误，错误信息：%@",error.localizedDescription);
+        }
+        if (lastBackgroundTaskIdentifier!=UIBackgroundTaskInvalid) {
+            [[UIApplication sharedApplication] endBackgroundTask:lastBackgroundTaskIdentifier];
+        }
+        NSLog(@"成功保存视频到相簿.");
+    }];

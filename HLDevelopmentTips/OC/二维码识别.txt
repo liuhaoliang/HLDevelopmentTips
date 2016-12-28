@@ -1,0 +1,25 @@
+- (void)detectImage:(UIImage*)image{
+    if ([[[UIDevice currentDevice] systemVersion] doubleValue] < 8) {
+        return;
+    }
+    
+    //初始化一个监测器
+    CIDetector*detector = [CIDetector detectorOfType:CIDetectorTypeQRCode context:nil options:@{ CIDetectorAccuracy : CIDetectorAccuracyHigh }];
+    
+    //监测到的结果数组  放置识别完之后的数据
+    NSArray *features = [detector featuresInImage:[CIImage imageWithCGImage:image.CGImage]];
+    //判断是否有数据（即是否是二维码）
+    if (features.count >=1) {
+        /**结果对象 */
+        CIQRCodeFeature *feature = [features objectAtIndex:0];
+        NSString *scannedResult = feature.messageString;
+        
+        UIAlertView * alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:scannedResult delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alertView show];
+        
+    }
+    else{
+        UIAlertView * alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"该图片没有包含二维码！" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alertView show];
+    }
+}

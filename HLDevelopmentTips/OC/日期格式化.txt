@@ -1,0 +1,17 @@
+
+    static NSDateFormatter *dateFormatter =nil;
+    if (dateFormatter == nil) {
+        dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy.MM.dd"];
+        dateFormatter.timeZone = [NSTimeZone timeZoneWithName:@"Asia/Hong_Kong"];
+    }
+
+
+    // 获取系统时区
+    NSTimeZone *zone1 = [NSTimeZone systemTimeZone];
+        
+    // 获取本地时区
+    NSTimeZone *zone2 = [NSTimeZone localTimeZone];
+        
+    // 获取默认时区
+    NSTimeZone *zone3 = [NSTimeZone defaultTimeZone];

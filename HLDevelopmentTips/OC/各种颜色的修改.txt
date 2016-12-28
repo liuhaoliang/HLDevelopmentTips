@@ -1,0 +1,24 @@
+iOS7默认状态栏文字颜色为黑色，项目需要修改为白色。
+
+1在Info.plist中设置UIViewControllerBasedStatusBarAppearance 为NO
+2 在需要改变状态栏颜色的 AppDelegate中在 didFinishLaunchingWithOptions 方法中增加： 
+[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
+如果需要在单个ViewController中添加，在ViewDidLoad方法中增加：
+
+[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
+或
+//修改状态栏字体颜色
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    //设置导航标题字体颜色为白色
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor whiteColor]}];
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+//设置导航item（按钮等）颜色为白色
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+//_placeholderLabel.textColor属性设置颜色

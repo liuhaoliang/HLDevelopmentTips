@@ -1,0 +1,7 @@
+    NSIndexPath * indexPath = [NSIndexPath indexPathForRow:_row inSection:_openSection];
+    UITableViewCell * cell = [_tableView cellForRowAtIndexPath:indexPath];
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:cell cache:YES];
+    [UIView commitAnimations];

@@ -1,0 +1,18 @@
+    //  设置右侧按钮必须按照以下方法写，否则左右会有5pt的偏移
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setImage:[UIImage imageNamed:@"ic_send"] forState:0];
+    /*
+     *  设置frame只能控制按钮的大小
+     */
+    btn.frame= CGRectMake(0, 0, 40, 44);
+    [btn addTarget:self action:@selector(publishStatus:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *btn_right = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]
+                                       initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+                                       target:nil action:nil];
+    /*
+     *  width为负数时，相当于btn向右移动width数值个像素，由于按钮本身和边界间距为5pix，所以width设为-5时，间距正好调整
+     *  为0；width为正数时，正好相反，相当于往左移动width数值个像素
+     */
+    negativeSpacer.width = -5;
+    //self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:negativeSpacer, btn_right, nil];

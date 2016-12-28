@@ -1,0 +1,6 @@
+UIImage *img = [UIImage imageNamed:imgName];
+NSTextAttachment *textAttachment = [[NSTextAttachment alloc] init];
+textAttachment.image = img;
+NSAttributedString *attrStringWithImage = [NSAttributedString attributedStringWithAttachment:textAttachment];
+NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] init];
+[attrStr appendAttributedString:attrStringWithImage];

@@ -1,0 +1,5 @@
+在某个 view 的有效范围内,断点,然后命令行输出:如下
+
+po [view recursiveDescription]
+
+即可立刻显示该 View 及子 View 的视图层级,相当霸气~还自带分隔线

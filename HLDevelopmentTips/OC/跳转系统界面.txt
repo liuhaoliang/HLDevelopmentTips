@@ -1,0 +1,40 @@
+//跳转系统设置根目录中的项目使用下面的方法
+          _array = @[
+                     @{@"系统设置":@"prefs:root=INTERNET_TETHERING"},
+                     @{@"WIFI设置":@"prefs:root=WIFI"},
+                     @{@"蓝牙设置":@"prefs:root=Bluetooth"},
+                     @{@"系统通知":@"prefs:root=NOTIFICATIONS_ID"},
+                     @{@"通用设置":@"prefs:root=General"},
+                     @{@"显示设置":@"prefs:root=DISPLAY&BRIGHTNESS"},
+                     @{@"壁纸设置":@"prefs:root=Wallpaper"},
+                     @{@"声音设置":@"prefs:root=Sounds"},
+                      @{@"隐私设置":@"prefs:root=privacy"},
+                      @{@"APP Store":@"prefs:root=STORE"},
+                      @{@"Notes":@"prefs:root=NOTES"},
+                      @{@"Safari":@"prefs:root=Safari"},
+                      @{@"Music":@"prefs:root=MUSIC"},
+                      @{@"photo":@"prefs:root=Photos"}
+                  ];
+       NSURL * url = [NSURL URLWithString:[_array[index] allValues].firstObject];
+       [[UIApplication sharedApplication]openURL:url];
+
+
+//如果要跳转第三方应用的设置界面中，使用prefs:root=boundleId的方式，boundleId是第三方应用的boundleId。
+//如果需要继续向项目内层进行跳转，可以通过添加path路径的方式，如下：
+
+
+
+              _array = @[
+                          @{@"关于本机":@"prefs:root=General&path=About"},
+                          @{@"软件升级":@"prefs:root=General&path=SOFTWARE_UPDATE_LINK"},
+                          @{@"日期时间":@"prefs:root=General&path=DATE_AND_TIME"},
+                          @{@"Accessibility":@"prefs:root=General&path=ACCESSIBILITY"},
+                          @{@"键盘设置":@"prefs:root=General&path=Keyboard"},
+                          @{@"VPN":@"prefs:root=General&path=VPN"},
+                          @{@"壁纸设置":@"prefs:root=Wallpaper"},
+                          @{@"声音设置":@"prefs:root=Sounds"},
+                           @{@"隐私设置":@"prefs:root=privacy"},
+                           @{@"APP Store":@"prefs:root=STORE"},
+                           @{@"还原设置":@"prefs:root=General&path=Reset"},
+                           @{@"应用通知":@"prefs:root=NOTIFICATIONS_ID&path=应用的boundleId"}
+                           ];

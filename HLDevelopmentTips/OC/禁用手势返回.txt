@@ -1,0 +1,27 @@
+1.在有的时候，我们不需要手势返回功能，那么可以在页面中添加以下代码：  
+
+- (void)viewDidAppear:(BOOL)animated  
+{  
+    [super viewDidAppear:animated];    
+    // 禁用返回手势  
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {  
+        self.navigationController.interactivePopGestureRecognizer.enabled = NO;  
+    }  
+}  
+  
+- (void)viewWillDisappear:(BOOL)animated  
+{  
+    [super viewWillDisappear:animated];  
+  
+    // 开启  
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {  
+        self.navigationController.interactivePopGestureRecognizer.enabled = YES;  
+    }  
+} 
+
+
+2.当我们自定义的navagatinItem,自定义的返回按钮后,你在使用手势时发现已经已经无法返回:
+这是因为,你如果 使用自定义的返回按钮时,系统已经将该navigationItem的类型改为  custom,
+这是 默认返回的返回手势就是不可用的,我们需要添加如下的语句
+
+self.navigationController.interactivePopGestureRecognizer.delegate = (id<UIGestureRecognizerDelegate>)self; 

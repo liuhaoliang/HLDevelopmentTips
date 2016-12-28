@@ -1,0 +1,9 @@
+
+得到中英文混合字符串长度 英文1  中文2  表情4
+- (NSInteger)convertToInt:(NSString*)strtemp
+  
+{
+NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
+    NSData* da = [strtemp dataUsingEncoding:enc];
+    return [da length];
+}

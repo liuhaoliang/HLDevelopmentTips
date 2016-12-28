@@ -1,0 +1,15 @@
+ self.refreshControl = [[UIRefreshControl alloc] init];
+
+
+[self.refreshControl addTarget:self action:@selector(onRefreshControlEvent:) forControlEvents:UIControlEventValueChanged];
+
+
+- (void)onRefreshControlEvent:(UIRefreshControl *)refreshControl {
+    if (refreshControl.isRefreshing) {
+        NSString *username = [[AVUser currentUser] username];
+        [[MessageData sharedInstance] refreshAll:username completion:^(NSError *error) {
+            [refreshControl endRefreshing];
+            [SVProgressHUD showSuccessWithStatus:@"刷新成功"];
+        }];
+    }
+}

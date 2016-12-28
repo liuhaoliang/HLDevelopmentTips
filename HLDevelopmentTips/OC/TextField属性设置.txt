@@ -1,0 +1,4 @@
+    [_textField setValue:[UIColor colorWithWhite:1 alpha:0.5] forKeyPath:@"_placeholderLabel.textColor"];
+    [_textField setValue:[UIFont boldSystemFontOfSize:FONT_14] forKeyPath:@"_placeholderLabel.font"];
+    
+    [_textField addTarget:self action:@selector(didEndOnExit) forControlEvents:UIControlEventEditingDidEndOnExit];

@@ -1,0 +1,4 @@
+iOS 8 中定位功能的变化。
+iOS 8 定位功能不在只有开启和关闭两种状态，分为：永不，使用应用程序期间，始终。
+iOS 8 必须在 Info.plist 文件中配置 NSLocationAlwaysUsageDescription 或者 NSLocationWhenInUseUsageDescription 属性来告诉用户使用定位服务的目的。值为告知用户的提示信息。
+使用定位前还需要使用 requestAlwaysAuthorization，requestWhenInUseAuthorization 方法获得用户的允许。

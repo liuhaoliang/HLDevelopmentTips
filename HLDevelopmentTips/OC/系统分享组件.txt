@@ -1,0 +1,59 @@
+使用系统方法实现分享，需要#import <Social/Social.h>
+
+1.调用系统自带的分享方法，需要自行选择分享的平台：
+
+ //初始化分享控件
+        UIActivityViewController *activeViewController = [[UIActivityViewController alloc]initWithActivityItems:@[@"百度",[NSURL URLWithString:@"http://www.baidu.com"]] applicationActivities:nil];
+        //不显示哪些分享平台(具体支持那些平台，可以查看Xcode的api)
+        activeViewController.excludedActivityTypes = @[UIActivityTypeAirDrop,UIActivityTypeCopyToPasteboard,UIActivityTypeAddToReadingList];
+        [self presentViewController:activeViewController animated:YES completion:nil];
+        //分享结果回调方法
+        UIActivityViewControllerCompletionHandler myblock = ^(NSString *type,BOOL completed){
+            NSLog(@"%d %@",completed,type);
+        };
+        activeViewController.completionHandler = myblock;
+
+
+
+
+2.调用系统方法，直接分享到可以支持的分享平台：
+
+// 首先判断某个平台是否可用（如果未绑定账号则不可用）
+
+            if (![SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+                NSLog(@"不可用");
+                return;
+            }
+
+        /* *****可以分享的平台*****
+         SOCIAL_EXTERN NSString *const SLServiceTypeTwitter NS_AVAILABLE(10_8, 6_0);//Twitter
+         SOCIAL_EXTERN NSString *const SLServiceTypeFacebook NS_AVAILABLE(10_8, 6_0);//Facebook
+         SOCIAL_EXTERN NSString *const SLServiceTypeSinaWeibo NS_AVAILABLE(10_8, 6_0);//新浪微博
+         SOCIAL_EXTERN NSString *const SLServiceTypeTencentWeibo NS_AVAILABLE(10_9, 7_0);//腾讯微博
+         SOCIAL_EXTERN NSString *const SLServiceTypeLinkedIn NS_AVAILABLE(10_9, NA);//领英
+         */
+
+        // 创建控制器，并设置ServiceType（指定分享平台）
+        SLComposeViewController *composeVC = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        // 添加要分享的图片
+        [composeVC addImage:[UIImage imageNamed:@"Nameless"]];
+        // 添加要分享的文字
+        [composeVC setInitialText:@"share to PUTClub"];
+        // 添加要分享的url
+        [composeVC addURL:[NSURL URLWithString:@"http://www.putclub.com"]];
+        // 弹出分享控制器
+        [self presentViewController:composeVC animated:YES completion:nil];
+        // 监听用户点击事件
+        composeVC.completionHandler = ^(SLComposeViewControllerResult result){
+            if (result == SLComposeViewControllerResultDone) {
+                NSLog(@"点击了发送");
+            }
+            else if (result == SLComposeViewControllerResultCancelled)
+            {
+                NSLog(@"点击了取消");
+            }
+        };
+
+文／DamonOrAngle（简书作者）
+原文链接：http://www.jianshu.com/p/4149ba123b12
+著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。

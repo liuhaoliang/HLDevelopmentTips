@@ -1,0 +1,20 @@
+//获取日期
+    NSArray * arrWeek=[NSArray arrayWithObjects:@"星期日",@"星期一",@"星期二",@"星期三",@"星期四",@"星期五",@"星期六", nil];
+    NSDate *date = [NSDate date]; 
+    NSCalendar *calendar = [[[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar] autorelease]; 
+    NSDateComponents *comps = [[[NSDateComponents alloc] init] autorelease]; 
+    NSInteger unitFlags = NSYearCalendarUnit | 
+    NSMonthCalendarUnit | 
+    NSDayCalendarUnit | 
+    NSWeekdayCalendarUnit | 
+    NSHourCalendarUnit | 
+    NSMinuteCalendarUnit | 
+    NSSecondCalendarUnit; 
+    comps = [calendar components:unitFlags fromDate:date]; 
+    int week = [comps weekday]; 
+    int year=[comps year]; 
+    int month = [comps month]; 
+    int day = [comps day]; 
+    m_labDate.text=[NSString stringWithFormat:@"%d年%d月",year,month];
+    m_labToday.text=[NSString stringWithFormat:@"%d",day];
+    m_labWeek.text=[NSString stringWithFormat:@"%@",[arrWeek objectAtIndex:week]];

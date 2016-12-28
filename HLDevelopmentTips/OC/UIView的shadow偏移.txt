@@ -1,0 +1,15 @@
+    statusBarView.layer.shadowColor = statusBarColor.CGColor;
+    statusBarView.layer.shadowOffset = CGSizeMake(0,1);
+    statusBarView.layer.shadowOpacity = 1;
+    statusBarView.layer.shadowRadius = 1;
+
+
+
+    NSMutableAttributedString* attributedString = [[NSMutableAttributedString alloc] initWithString:text];;
+    NSShadow * shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor darkGrayColor];
+    shadow.shadowOffset = CGSizeMake(0, 0);
+    shadow.shadowBlurRadius = 2;
+    [attributedString addAttribute:NSShadowAttributeName value:shadow range:NSMakeRange(0,attributedString.length)];
+    
+    self.label.attributedText = attributedString;

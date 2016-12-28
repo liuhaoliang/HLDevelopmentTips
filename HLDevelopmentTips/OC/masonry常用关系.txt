@@ -1,0 +1,65 @@
+[targetView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self.view).offset(-20);
+        make.leading.equalTo(self.view).offset(20);
+        make.size.mas_equalTo(CGSizeMake(100, 100));
+
+
+
+    }];
+//设置内边距，以下等价
+        make.leading.top.mas_equalTo(@50);
+        make.trailing.bottom.mas_equalTo(@-50);
+或
+        make.edges.insets(UIEdgeInsetsMake(50, 50, 50, 50));
+
+//设置居中
+ make.size.mas_equalTo(CGSizeMake(100, 100));
+ // 添加居中约束（居中方式与self相同）
+ make.center.equalTo(weakSelf.view);
+
+
+make.edges.equalTo(superview).with.insets(padding);
+
+总结：
+可以给控件添加left/right/top/bottom/size/height/width/insert约束；
+库提供了三个方法，mas_makeConstraints添加约束，mas_updateConstraints修改约束，mas_remakeConstraints清除以前约束并添加新约束；
+
+
+=============================================================================
+
+// 告诉self.view约束需要更新
+  [self.view setNeedsUpdateConstraints];
+  // 调用此方法告诉self.view检测是否需要更新约束，若需要则更新，下面添加动画效果才起作用
+  [self.view updateConstraintsIfNeeded];
+
+  [UIView animateWithDuration:0.3 animations:^{
+    [self.view layoutIfNeeded];
+  }];
+
+
+=============================================================================
+
+	self.leading.constant = 100;
+        [self setNeedsLayout]; //更新视图
+        [self layoutIfNeeded];
+
+
+
+下面来看下,如何删除和增加约束 最后,附个addConstraint 函数的意义: view1.attr1 = view2.attr2 * multiplier + constant
+
+[self.view removeConstraint:_sinaLeftDistance];//在父试图上将iSinaButton距离屏幕左边的约束删除
+
+  NSLayoutConstraint *myConstraint =[NSLayoutConstraint
+                        constraintWithItem:iSinaButton //子试图
+                        attribute:NSLayoutAttributeCenterX //子试图的约束属性
+                        relatedBy:NSLayoutRelationEqual //属性间的关系
+                        toItem:self.view//相对于父试图
+                         attribute:NSLayoutAttributeCenterX//父试图的约束属性
+                         multiplier:1.0 
+                         constant:0.0];// 固定距离
+
+[self.view addConstraint: myConstraint];//为iSinaButton重新添加一个约束
+
+
+
+

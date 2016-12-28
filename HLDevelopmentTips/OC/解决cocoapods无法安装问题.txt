@@ -1,0 +1,45 @@
+
+pod install --no-repo-update --verbose
+
+更新cocoapod：
+sudo gem update cocoapods 
+
+
+安装cocoa pods
+1.gem sources -a http://rubygems-china.oss.aliyuncs.com
+
+2.sudo gem install cocoapods
+
+pod install --verbose --no-repo-update
+
+pod update --verbose --no-repo-update
+
+一直想尝试新系统，由于担心bug会导致开发遇到一系列问题，一直忍住没有升级，前两天升级了，就立刻遇到这个问题。
+
+无法对cocoapods进行操作，stackoverflow上有个解决方案，被多人转载，可惜didn't work for me. 于是我试着重新安装ruby，解决了
+
+方案一：(适用于大多数人)
+
+Open Xcode 6 打开Xcode 6 —— 系统偏好设置 —— 位置 —— 把命令行工具改为Xcode 6.0
+
+卸载 cocoapods —— 重新安装 xcodeproj —— 重新安装 cocoapods
+
+$ sudo gem uninstall cocoapods
+
+$ sudo gem install xcodeproj
+
+$ sudo gem install cocoapods 如果没有问题，运行pod --version 查看安装是否成功
+
+如果，不幸的是，上述操作无法解决，就要和楼主一样了
+
+1.更新rbenv
+
+curl -L get.rvm.io | bash -s stable
+
+2.重新安装ruby
+
+rvm install ruby 2.3.0
+
+3.重新安装cocoa-pods
+
+sudo gem install cocoapods

@@ -1,0 +1,10 @@
+//导航下的视图有偏移，试试controller的这两个属性    
+self.edgesForExtendedLayout = UIRectEdgeNone;
+self.extendedLayoutIncludesOpaqueBars = YES;
+
+
+
+//self.automaticallyAdjustsScrollViewInsets = NO;
+
+
+//self.navigationController.navigationBar.translucent = NO;

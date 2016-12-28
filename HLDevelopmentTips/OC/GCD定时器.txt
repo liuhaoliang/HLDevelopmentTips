@@ -1,0 +1,44 @@
+ // 获得一个queue
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    // ①创建定时器
+    dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+    /**函数原型
+      dispatch_source_create(dispatch_source_type_t type,
+      uintptr_t handle,
+      unsigned long mask,
+      dispatch_queue_t queue);
+     *@param start
+     * 开始时间
+     *
+     * @param interval
+     *时间间隔
+     *
+     * @param leeway
+     * 容差(精确度)
+     */
+    // ②设置定时开始时间 间隔 精确度
+    dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC, 0.1 * NSEC_PER_SEC);
+     // ③设置定时执行任务
+    dispatch_source_set_event_handler(timer, ^{
+
+        static NSInteger cnt = 1;
+        NSLog(@"------------%ld", cnt++);
+    });
+    // ④激活定时器
+    dispatch_resume(timer);
+   // 持有定时器 避免ViewDidLoad方法结束timer变量消失引起定时器销毁
+    _timer = timer;
+
+
+
+
+
+
+
++++++++++++++其他+++++++++++++++
+    [[UIApplication sharedApplication] setKeepAliveTimeout:600 handler:^{
+        NSLog(@"+++1");
+    }];
+
+
+

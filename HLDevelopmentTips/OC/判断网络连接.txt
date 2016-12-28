@@ -1,0 +1,41 @@
+1.前提：工程添加：SystemConfiguration.framework
+
+
+2.【如果你使用的ASIHTTPRequest类库，那么直接import Reachbility.h就可以了，ASIHTTP类库里包含Reachbility.h和.m】
+#import "Reachability.h"
+
+方法一：    
+	Reachability *reachability = [Reachability reachabilityForInternetConnection];
+    	reachability.reachableBlock = ^(Reachability *reachability) {
+
+
+
+    	};
+
+方法二：
+-(BOOL) isConnectionAvailable{  
+  
+    BOOL isExistenceNetwork = YES;  
+    Reachability *reach = [Reachability reachabilityWithHostName:@"www.apple.com"];  
+    switch ([reach currentReachabilityStatus]) {  
+        case NotReachable:  
+            isExistenceNetwork = NO;  
+            //NSLog(@"notReachable");  
+            break;  
+        case ReachableViaWiFi:  
+            isExistenceNetwork = YES;  
+            //NSLog(@"WIFI");  
+            break;  
+        case ReachableViaWWAN:  
+            isExistenceNetwork = YES;  
+            //NSLog(@"3G");  
+            break;  
+    }  
+      
+    if (!isExistenceNetwork) {  
+ 
+        return NO;  
+    }  
+      
+    return isExistenceNetwork;  
+}  

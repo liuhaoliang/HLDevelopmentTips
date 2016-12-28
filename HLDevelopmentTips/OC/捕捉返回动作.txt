@@ -1,0 +1,10 @@
+代码如下，手势返回也知道哦~😊
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound)
+    {
+        NSLog(@"clicked navigationbar back button");
+    }
+}
+

@@ -1,0 +1,12 @@
+        UIFont* font = [UIFont fontWithName:@"PingFangHK-SemiBold" size:12];
+        NSLog(@"%@",font);
+        NSArray *familyNames = [UIFont familyNames];
+        for(NSString *familyName in familyNames)
+        {
+            NSLog(@"文字名称是%@", familyName);
+            NSArray *fontNames = [UIFont fontNamesForFamilyName:familyName];
+            for(NSString *fontName in fontNames)
+            {
+                NSLog(@"\t字体名称是%@", fontName);
+            }
+        }

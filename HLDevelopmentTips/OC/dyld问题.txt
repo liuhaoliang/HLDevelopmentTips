@@ -1,0 +1,10 @@
+dyld: Library not loaded: @rpath/libswiftCore.dylib
+
+  Referenced from: /private/var/mobile/Containers/Bundle/Application/9EF1BC1E-21F8-4C32-B2D2-0726D4A71E40/KoucloiPhone.app/KoucloiPhone
+
+  Reason: image not found
+
+／／1. 退出 Xcode
+／／2. 重启电脑
+3. 找到 这个 DerivedData 文件夹 删除 (路径: ~/Library/Developer/Xcode/DerivedData)
+4. 删除这个 com.apple.dt.Xcode 文件 (路径: ~/Library/Caches/com.apple.dt.Xcode)

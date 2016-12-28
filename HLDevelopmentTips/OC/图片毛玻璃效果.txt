@@ -1,0 +1,25 @@
+
+1.
+    //获取毛玻璃图片
+    self.orignalImage = [CIImage imageWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"image1" withExtension:@"png"]];
+    //获取滤镜，并设置（使用KVO键值输入）
+    CIFilter *filter = [CIFilter filterWithName:@"CIGaussianBlur" keysAndValues:@"inputImage", self.orignalImage, @"inputRadius", @5.0f, nil];
+    //从滤镜中获取图片
+    CIImage *result = filter.outputImage;
+    self.filterImage = [UIImage imageWithCIImage:result];
+    //将图片添加到filterImageView上
+    self.filterImageView.image = self.filterImage;
+
+
+
+
+2.
+使用UIVisualEffectView来完成IOS中滤镜效果（ios8以上版本）
+
+使用方法很简单，就是创建一个模糊的view，然后放到需要覆盖的view上面
+
+    //设置模糊，效果为BlurEffectStyleLight
+    UIVisualEffectView *ruVisualEffectView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight]];
+    ruVisualEffectView.frame = self.ruImageView.bounds;
+    ruVisualEffectView.alpha = 1.0;
+    [self.ruImageView addSubview:ruVisualEffectView];

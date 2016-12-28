@@ -1,0 +1,20 @@
+                                 [wself.tableView.mj_header endRefreshing];
+                                 [wself.tableView.mj_footer endRefreshing];
+
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [wself fetchLatestData];
+    }];
+    
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        [wself fetchMoreData];
+    }];
+
+#import "MJRefresh.h"
+
+
+自动加载更多
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    if (scrollView.contentOffset.y >= scrollView.contentSize.height - scrollView.frame.size.height) {
+        [self footerRereshing];
+    }
+}

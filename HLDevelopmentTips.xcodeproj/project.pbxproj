@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D4748611E12471800DFDDBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4748601E12471800DFDDBC /* AppDelegate.swift */; };
+		1D4748631E12471800DFDDBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4748621E12471800DFDDBC /* ViewController.swift */; };
+		1D4748661E12471800DFDDBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4748641E12471800DFDDBC /* Main.storyboard */; };
+		1D4748681E12471800DFDDBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4748671E12471800DFDDBC /* Assets.xcassets */; };
+		1D47486B1E12471800DFDDBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4748691E12471800DFDDBC /* LaunchScreen.storyboard */; };
+		1D4748731E124BEA00DFDDBC /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4748721E124BEA00DFDDBC /* ContentViewController.swift */; };
+		1D4748751E124DD800DFDDBC /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4748741E124DD800DFDDBC /* Common.swift */; };
+		1D4785351E136C8A00A987DF /* afnetworking.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4784F41E136C8A00A987DF /* afnetworking.txt */; };
+		1D4785361E136C8A00A987DF /* ARC和非ARC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4784F51E136C8A00A987DF /* ARC和非ARC.txt */; };
+		1D4785371E136C8A00A987DF /* Cell分割线左边距为0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4784F61E136C8A00A987DF /* Cell分割线左边距为0.txt */; };
+		1D4785381E136C8A00A987DF /* cell分割线问题.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4784F71E136C8A00A987DF /* cell分割线问题.txt */; };
+		1D4785391E136C8A00A987DF /* dyld问题.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4784F81E136C8A00A987DF /* dyld问题.txt */; };
+		1D47853A1E136C8A00A987DF /* fix图片的转向.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4784F91E136C8A00A987DF /* fix图片的转向.txt */; };
+		1D47853B1E136C8A00A987DF /* GCD定时器.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4784FA1E136C8A00A987DF /* GCD定时器.txt */; };
+		1D47853C1E136C8A00A987DF /* iOS 8 定位.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4784FB1E136C8A00A987DF /* iOS 8 定位.txt */; };
+		1D47853D1E136C8A00A987DF /* iOS 9 使用 http 请求.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4784FC1E136C8A00A987DF /* iOS 9 使用 http 请求.txt */; };
+		1D47853E1E136C8A00A987DF /* masonry常用关系.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4784FD1E136C8A00A987DF /* masonry常用关系.txt */; };
+		1D47853F1E136C8A00A987DF /* MJRefresh使用.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4784FE1E136C8A00A987DF /* MJRefresh使用.txt */; };
+		1D4785401E136C8A00A987DF /* NSObject+AssociateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4785011E136C8A00A987DF /* NSObject+AssociateObject.m */; };
+		1D4785411E136C8A00A987DF /* pch文件添加.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785021E136C8A00A987DF /* pch文件添加.txt */; };
+		1D4785421E136C8A00A987DF /* push动画.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785031E136C8A00A987DF /* push动画.txt */; };
+		1D4785431E136C8A00A987DF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4785061E136C8A00A987DF /* Reachability.m */; };
+		1D4785441E136C8A00A987DF /* TextField属性设置.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785071E136C8A00A987DF /* TextField属性设置.txt */; };
+		1D4785451E136C8A00A987DF /* UITableViewRowAction.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785081E136C8A00A987DF /* UITableViewRowAction.txt */; };
+		1D4785461E136C8A00A987DF /* UIView+BadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D47850B1E136C8A00A987DF /* UIView+BadgeView.m */; };
+		1D4785471E136C8A00A987DF /* UIView动画.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D47850C1E136C8A00A987DF /* UIView动画.txt */; };
+		1D4785481E136C8A00A987DF /* UIView的shadow偏移.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D47850D1E136C8A00A987DF /* UIView的shadow偏移.txt */; };
+		1D4785491E136C8A00A987DF /* 下拉刷新.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D47850F1E136C8A00A987DF /* 下拉刷新.txt */; };
+		1D47854A1E136C8A00A987DF /* 二维码识别.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785101E136C8A00A987DF /* 二维码识别.txt */; };
+		1D47854B1E136C8A00A987DF /* 保存图片,视频 到相册.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785111E136C8A00A987DF /* 保存图片,视频 到相册.txt */; };
+		1D47854C1E136C8A00A987DF /* 倒计时实现的两种方式.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785121E136C8A00A987DF /* 倒计时实现的两种方式.txt */; };
+		1D47854D1E136C8A00A987DF /* 关于想给约束改变添加动画.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785131E136C8A00A987DF /* 关于想给约束改变添加动画.txt */; };
+		1D47854E1E136C8A00A987DF /* 判断网络连接.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785141E136C8A00A987DF /* 判断网络连接.txt */; };
+		1D47854F1E136C8A00A987DF /* 加载本地网页.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785151E136C8A00A987DF /* 加载本地网页.txt */; };
+		1D4785501E136C8A00A987DF /* 动态计算文字高度.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785161E136C8A00A987DF /* 动态计算文字高度.txt */; };
+		1D4785511E136C8A00A987DF /* 单元格刷新.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785171E136C8A00A987DF /* 单元格刷新.txt */; };
+		1D4785521E136C8A00A987DF /* 各种颜色的修改.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785181E136C8A00A987DF /* 各种颜色的修改.txt */; };
+		1D4785531E136C8A00A987DF /* 启动时隐藏系统状态栏.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785191E136C8A00A987DF /* 启动时隐藏系统状态栏.txt */; };
+		1D4785541E136C8A00A987DF /* 命令行查看视图层级.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D47851A1E136C8A00A987DF /* 命令行查看视图层级.txt */; };
+		1D4785551E136C8A00A987DF /* 图片毛玻璃效果.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D47851B1E136C8A00A987DF /* 图片毛玻璃效果.txt */; };
+		1D4785561E136C8A00A987DF /* 坐标转换.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D47851C1E136C8A00A987DF /* 坐标转换.txt */; };
+		1D4785571E136C8A00A987DF /* 如何获得微信公众号关注页面地址? .txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D47851D1E136C8A00A987DF /* 如何获得微信公众号关注页面地址? .txt */; };
+		1D4785581E136C8A00A987DF /* 字符串操作.doc in Resources */ = {isa = PBXBuildFile; fileRef = 1D47851E1E136C8A00A987DF /* 字符串操作.doc */; };
+		1D4785591E136C8A00A987DF /* 富文本信息.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D47851F1E136C8A00A987DF /* 富文本信息.txt */; };
+		1D47855A1E136C8A00A987DF /* 导航按钮左右偏移的解决.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785201E136C8A00A987DF /* 导航按钮左右偏移的解决.txt */; };
+		1D47855B1E136C8A00A987DF /* 导航标题的字体设置.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785211E136C8A00A987DF /* 导航标题的字体设置.txt */; };
+		1D47855C1E136C8A00A987DF /* 年月日的获取.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785221E136C8A00A987DF /* 年月日的获取.txt */; };
+		1D47855D1E136C8A00A987DF /* 截图.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785231E136C8A00A987DF /* 截图.txt */; };
+		1D47855E1E136C8A00A987DF /* 打印系统字体.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785241E136C8A00A987DF /* 打印系统字体.txt */; };
+		1D47855F1E136C8A00A987DF /* 捕捉返回动作.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785251E136C8A00A987DF /* 捕捉返回动作.txt */; };
+		1D4785601E136C8A00A987DF /* 支持滑动删除 Cell.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785261E136C8A00A987DF /* 支持滑动删除 Cell.txt */; };
+		1D4785611E136C8A00A987DF /* 日期格式化.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785271E136C8A00A987DF /* 日期格式化.txt */; };
+		1D4785621E136C8A00A987DF /* 更新xib约束.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785281E136C8A00A987DF /* 更新xib约束.txt */; };
+		1D4785631E136C8A00A987DF /* 监听系统生命周期.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785291E136C8A00A987DF /* 监听系统生命周期.txt */; };
+		1D4785641E136C8A00A987DF /* 禁用手势返回.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D47852A1E136C8A00A987DF /* 禁用手势返回.txt */; };
+		1D4785651E136C8A00A987DF /* 系统分享组件.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D47852B1E136C8A00A987DF /* 系统分享组件.txt */; };
+		1D4785661E136C8A00A987DF /* 获取文件大小.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D47852C1E136C8A00A987DF /* 获取文件大小.txt */; };
+		1D4785671E136C8A00A987DF /* 获取系统信息.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D47852D1E136C8A00A987DF /* 获取系统信息.txt */; };
+		1D4785681E136C8A00A987DF /* 获取联系人姓名首字母.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D47852E1E136C8A00A987DF /* 获取联系人姓名首字母.txt */; };
+		1D4785691E136C8A00A987DF /* 视频，音频，拍照相关.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D47852F1E136C8A00A987DF /* 视频，音频，拍照相关.txt */; };
+		1D47856A1E136C8A00A987DF /* 解决cocoapods无法安装问题.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785301E136C8A00A987DF /* 解决cocoapods无法安装问题.txt */; };
+		1D47856B1E136C8A00A987DF /* 解决导航和视图上下偏移.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785311E136C8A00A987DF /* 解决导航和视图上下偏移.txt */; };
+		1D47856C1E136C8A00A987DF /* 计算字符串文字个数.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785321E136C8A00A987DF /* 计算字符串文字个数.txt */; };
+		1D47856D1E136C8A00A987DF /* 调试阶段的NSLog.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785331E136C8A00A987DF /* 调试阶段的NSLog.txt */; };
+		1D47856E1E136C8A00A987DF /* 跳转系统界面.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785341E136C8A00A987DF /* 跳转系统界面.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D47485D1E12471800DFDDBC /* HLDevelopmentTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLDevelopmentTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D4748601E12471800DFDDBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D4748621E12471800DFDDBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D4748651E12471800DFDDBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D4748671E12471800DFDDBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D47486A1E12471800DFDDBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D47486C1E12471800DFDDBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D4748721E124BEA00DFDDBC /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		1D4748741E124DD800DFDDBC /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		1D4784F41E136C8A00A987DF /* afnetworking.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = afnetworking.txt; sourceTree = "<group>"; };
+		1D4784F51E136C8A00A987DF /* ARC和非ARC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ARC和非ARC.txt"; sourceTree = "<group>"; };
+		1D4784F61E136C8A00A987DF /* Cell分割线左边距为0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Cell分割线左边距为0.txt"; sourceTree = "<group>"; };
+		1D4784F71E136C8A00A987DF /* cell分割线问题.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cell分割线问题.txt"; sourceTree = "<group>"; };
+		1D4784F81E136C8A00A987DF /* dyld问题.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dyld问题.txt"; sourceTree = "<group>"; };
+		1D4784F91E136C8A00A987DF /* fix图片的转向.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "fix图片的转向.txt"; sourceTree = "<group>"; };
+		1D4784FA1E136C8A00A987DF /* GCD定时器.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "GCD定时器.txt"; sourceTree = "<group>"; };
+		1D4784FB1E136C8A00A987DF /* iOS 8 定位.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "iOS 8 定位.txt"; sourceTree = "<group>"; };
+		1D4784FC1E136C8A00A987DF /* iOS 9 使用 http 请求.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "iOS 9 使用 http 请求.txt"; sourceTree = "<group>"; };
+		1D4784FD1E136C8A00A987DF /* masonry常用关系.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "masonry常用关系.txt"; sourceTree = "<group>"; };
+		1D4784FE1E136C8A00A987DF /* MJRefresh使用.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MJRefresh使用.txt"; sourceTree = "<group>"; };
+		1D4785001E136C8A00A987DF /* NSObject+AssociateObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AssociateObject.h"; sourceTree = "<group>"; };
+		1D4785011E136C8A00A987DF /* NSObject+AssociateObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AssociateObject.m"; sourceTree = "<group>"; };
+		1D4785021E136C8A00A987DF /* pch文件添加.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pch文件添加.txt"; sourceTree = "<group>"; };
+		1D4785031E136C8A00A987DF /* push动画.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "push动画.txt"; sourceTree = "<group>"; };
+		1D4785051E136C8A00A987DF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		1D4785061E136C8A00A987DF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		1D4785071E136C8A00A987DF /* TextField属性设置.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TextField属性设置.txt"; sourceTree = "<group>"; };
+		1D4785081E136C8A00A987DF /* UITableViewRowAction.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UITableViewRowAction.txt; sourceTree = "<group>"; };
+		1D47850A1E136C8A00A987DF /* UIView+BadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BadgeView.h"; sourceTree = "<group>"; };
+		1D47850B1E136C8A00A987DF /* UIView+BadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BadgeView.m"; sourceTree = "<group>"; };
+		1D47850C1E136C8A00A987DF /* UIView动画.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UIView动画.txt"; sourceTree = "<group>"; };
+		1D47850D1E136C8A00A987DF /* UIView的shadow偏移.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UIView的shadow偏移.txt"; sourceTree = "<group>"; };
+		1D47850E1E136C8A00A987DF /* WZLSerializeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLSerializeKit.h; sourceTree = "<group>"; };
+		1D47850F1E136C8A00A987DF /* 下拉刷新.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "下拉刷新.txt"; sourceTree = "<group>"; };
+		1D4785101E136C8A00A987DF /* 二维码识别.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "二维码识别.txt"; sourceTree = "<group>"; };
+		1D4785111E136C8A00A987DF /* 保存图片,视频 到相册.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "保存图片,视频 到相册.txt"; sourceTree = "<group>"; };
+		1D4785121E136C8A00A987DF /* 倒计时实现的两种方式.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "倒计时实现的两种方式.txt"; sourceTree = "<group>"; };
+		1D4785131E136C8A00A987DF /* 关于想给约束改变添加动画.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "关于想给约束改变添加动画.txt"; sourceTree = "<group>"; };
+		1D4785141E136C8A00A987DF /* 判断网络连接.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "判断网络连接.txt"; sourceTree = "<group>"; };
+		1D4785151E136C8A00A987DF /* 加载本地网页.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "加载本地网页.txt"; sourceTree = "<group>"; };
+		1D4785161E136C8A00A987DF /* 动态计算文字高度.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "动态计算文字高度.txt"; sourceTree = "<group>"; };
+		1D4785171E136C8A00A987DF /* 单元格刷新.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "单元格刷新.txt"; sourceTree = "<group>"; };
+		1D4785181E136C8A00A987DF /* 各种颜色的修改.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "各种颜色的修改.txt"; sourceTree = "<group>"; };
+		1D4785191E136C8A00A987DF /* 启动时隐藏系统状态栏.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "启动时隐藏系统状态栏.txt"; sourceTree = "<group>"; };
+		1D47851A1E136C8A00A987DF /* 命令行查看视图层级.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "命令行查看视图层级.txt"; sourceTree = "<group>"; };
+		1D47851B1E136C8A00A987DF /* 图片毛玻璃效果.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "图片毛玻璃效果.txt"; sourceTree = "<group>"; };
+		1D47851C1E136C8A00A987DF /* 坐标转换.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "坐标转换.txt"; sourceTree = "<group>"; };
+		1D47851D1E136C8A00A987DF /* 如何获得微信公众号关注页面地址? .txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "如何获得微信公众号关注页面地址? .txt"; sourceTree = "<group>"; };
+		1D47851E1E136C8A00A987DF /* 字符串操作.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "字符串操作.doc"; sourceTree = "<group>"; };
+		1D47851F1E136C8A00A987DF /* 富文本信息.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "富文本信息.txt"; sourceTree = "<group>"; };
+		1D4785201E136C8A00A987DF /* 导航按钮左右偏移的解决.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "导航按钮左右偏移的解决.txt"; sourceTree = "<group>"; };
+		1D4785211E136C8A00A987DF /* 导航标题的字体设置.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "导航标题的字体设置.txt"; sourceTree = "<group>"; };
+		1D4785221E136C8A00A987DF /* 年月日的获取.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "年月日的获取.txt"; sourceTree = "<group>"; };
+		1D4785231E136C8A00A987DF /* 截图.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "截图.txt"; sourceTree = "<group>"; };
+		1D4785241E136C8A00A987DF /* 打印系统字体.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "打印系统字体.txt"; sourceTree = "<group>"; };
+		1D4785251E136C8A00A987DF /* 捕捉返回动作.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "捕捉返回动作.txt"; sourceTree = "<group>"; };
+		1D4785261E136C8A00A987DF /* 支持滑动删除 Cell.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "支持滑动删除 Cell.txt"; sourceTree = "<group>"; };
+		1D4785271E136C8A00A987DF /* 日期格式化.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "日期格式化.txt"; sourceTree = "<group>"; };
+		1D4785281E136C8A00A987DF /* 更新xib约束.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "更新xib约束.txt"; sourceTree = "<group>"; };
+		1D4785291E136C8A00A987DF /* 监听系统生命周期.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "监听系统生命周期.txt"; sourceTree = "<group>"; };
+		1D47852A1E136C8A00A987DF /* 禁用手势返回.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "禁用手势返回.txt"; sourceTree = "<group>"; };
+		1D47852B1E136C8A00A987DF /* 系统分享组件.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "系统分享组件.txt"; sourceTree = "<group>"; };
+		1D47852C1E136C8A00A987DF /* 获取文件大小.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "获取文件大小.txt"; sourceTree = "<group>"; };
+		1D47852D1E136C8A00A987DF /* 获取系统信息.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "获取系统信息.txt"; sourceTree = "<group>"; };
+		1D47852E1E136C8A00A987DF /* 获取联系人姓名首字母.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "获取联系人姓名首字母.txt"; sourceTree = "<group>"; };
+		1D47852F1E136C8A00A987DF /* 视频，音频，拍照相关.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "视频，音频，拍照相关.txt"; sourceTree = "<group>"; };
+		1D4785301E136C8A00A987DF /* 解决cocoapods无法安装问题.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "解决cocoapods无法安装问题.txt"; sourceTree = "<group>"; };
+		1D4785311E136C8A00A987DF /* 解决导航和视图上下偏移.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "解决导航和视图上下偏移.txt"; sourceTree = "<group>"; };
+		1D4785321E136C8A00A987DF /* 计算字符串文字个数.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "计算字符串文字个数.txt"; sourceTree = "<group>"; };
+		1D4785331E136C8A00A987DF /* 调试阶段的NSLog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "调试阶段的NSLog.txt"; sourceTree = "<group>"; };
+		1D4785341E136C8A00A987DF /* 跳转系统界面.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "跳转系统界面.txt"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D47485A1E12471800DFDDBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D4748541E12471800DFDDBC = {
+			isa = PBXGroup;
+			children = (
+				1D47485F1E12471800DFDDBC /* HLDevelopmentTips */,
+				1D47485E1E12471800DFDDBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1D47485E1E12471800DFDDBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D47485D1E12471800DFDDBC /* HLDevelopmentTips.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D47485F1E12471800DFDDBC /* HLDevelopmentTips */ = {
+			isa = PBXGroup;
+			children = (
+				1D4748601E12471800DFDDBC /* AppDelegate.swift */,
+				1D4748621E12471800DFDDBC /* ViewController.swift */,
+				1D4748741E124DD800DFDDBC /* Common.swift */,
+				1D4748721E124BEA00DFDDBC /* ContentViewController.swift */,
+				1D4748641E12471800DFDDBC /* Main.storyboard */,
+				1D4748671E12471800DFDDBC /* Assets.xcassets */,
+				1D4748691E12471800DFDDBC /* LaunchScreen.storyboard */,
+				1D47486C1E12471800DFDDBC /* Info.plist */,
+				1D4784F31E136C8A00A987DF /* OC */,
+			);
+			path = HLDevelopmentTips;
+			sourceTree = "<group>";
+		};
+		1D4784F31E136C8A00A987DF /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				1D4784F41E136C8A00A987DF /* afnetworking.txt */,
+				1D4784F51E136C8A00A987DF /* ARC和非ARC.txt */,
+				1D4784F61E136C8A00A987DF /* Cell分割线左边距为0.txt */,
+				1D4784F71E136C8A00A987DF /* cell分割线问题.txt */,
+				1D4784F81E136C8A00A987DF /* dyld问题.txt */,
+				1D4784F91E136C8A00A987DF /* fix图片的转向.txt */,
+				1D4784FA1E136C8A00A987DF /* GCD定时器.txt */,
+				1D4784FB1E136C8A00A987DF /* iOS 8 定位.txt */,
+				1D4784FC1E136C8A00A987DF /* iOS 9 使用 http 请求.txt */,
+				1D4784FD1E136C8A00A987DF /* masonry常用关系.txt */,
+				1D4784FE1E136C8A00A987DF /* MJRefresh使用.txt */,
+				1D4784FF1E136C8A00A987DF /* NSObject+AssociateObject */,
+				1D4785021E136C8A00A987DF /* pch文件添加.txt */,
+				1D4785031E136C8A00A987DF /* push动画.txt */,
+				1D4785041E136C8A00A987DF /* Reachability */,
+				1D4785071E136C8A00A987DF /* TextField属性设置.txt */,
+				1D4785081E136C8A00A987DF /* UITableViewRowAction.txt */,
+				1D4785091E136C8A00A987DF /* UIView+BadgeView */,
+				1D47850C1E136C8A00A987DF /* UIView动画.txt */,
+				1D47850D1E136C8A00A987DF /* UIView的shadow偏移.txt */,
+				1D47850E1E136C8A00A987DF /* WZLSerializeKit.h */,
+				1D47850F1E136C8A00A987DF /* 下拉刷新.txt */,
+				1D4785101E136C8A00A987DF /* 二维码识别.txt */,
+				1D4785111E136C8A00A987DF /* 保存图片,视频 到相册.txt */,
+				1D4785121E136C8A00A987DF /* 倒计时实现的两种方式.txt */,
+				1D4785131E136C8A00A987DF /* 关于想给约束改变添加动画.txt */,
+				1D4785141E136C8A00A987DF /* 判断网络连接.txt */,
+				1D4785151E136C8A00A987DF /* 加载本地网页.txt */,
+				1D4785161E136C8A00A987DF /* 动态计算文字高度.txt */,
+				1D4785171E136C8A00A987DF /* 单元格刷新.txt */,
+				1D4785181E136C8A00A987DF /* 各种颜色的修改.txt */,
+				1D4785191E136C8A00A987DF /* 启动时隐藏系统状态栏.txt */,
+				1D47851A1E136C8A00A987DF /* 命令行查看视图层级.txt */,
+				1D47851B1E136C8A00A987DF /* 图片毛玻璃效果.txt */,
+				1D47851C1E136C8A00A987DF /* 坐标转换.txt */,
+				1D47851D1E136C8A00A987DF /* 如何获得微信公众号关注页面地址? .txt */,
+				1D47851E1E136C8A00A987DF /* 字符串操作.doc */,
+				1D47851F1E136C8A00A987DF /* 富文本信息.txt */,
+				1D4785201E136C8A00A987DF /* 导航按钮左右偏移的解决.txt */,
+				1D4785211E136C8A00A987DF /* 导航标题的字体设置.txt */,
+				1D4785221E136C8A00A987DF /* 年月日的获取.txt */,
+				1D4785231E136C8A00A987DF /* 截图.txt */,
+				1D4785241E136C8A00A987DF /* 打印系统字体.txt */,
+				1D4785251E136C8A00A987DF /* 捕捉返回动作.txt */,
+				1D4785261E136C8A00A987DF /* 支持滑动删除 Cell.txt */,
+				1D4785271E136C8A00A987DF /* 日期格式化.txt */,
+				1D4785281E136C8A00A987DF /* 更新xib约束.txt */,
+				1D4785291E136C8A00A987DF /* 监听系统生命周期.txt */,
+				1D47852A1E136C8A00A987DF /* 禁用手势返回.txt */,
+				1D47852B1E136C8A00A987DF /* 系统分享组件.txt */,
+				1D47852C1E136C8A00A987DF /* 获取文件大小.txt */,
+				1D47852D1E136C8A00A987DF /* 获取系统信息.txt */,
+				1D47852E1E136C8A00A987DF /* 获取联系人姓名首字母.txt */,
+				1D47852F1E136C8A00A987DF /* 视频，音频，拍照相关.txt */,
+				1D4785301E136C8A00A987DF /* 解决cocoapods无法安装问题.txt */,
+				1D4785311E136C8A00A987DF /* 解决导航和视图上下偏移.txt */,
+				1D4785321E136C8A00A987DF /* 计算字符串文字个数.txt */,
+				1D4785331E136C8A00A987DF /* 调试阶段的NSLog.txt */,
+				1D4785341E136C8A00A987DF /* 跳转系统界面.txt */,
+			);
+			path = OC;
+			sourceTree = "<group>";
+		};
+		1D4784FF1E136C8A00A987DF /* NSObject+AssociateObject */ = {
+			isa = PBXGroup;
+			children = (
+				1D4785001E136C8A00A987DF /* NSObject+AssociateObject.h */,
+				1D4785011E136C8A00A987DF /* NSObject+AssociateObject.m */,
+			);
+			path = "NSObject+AssociateObject";
+			sourceTree = "<group>";
+		};
+		1D4785041E136C8A00A987DF /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				1D4785051E136C8A00A987DF /* Reachability.h */,
+				1D4785061E136C8A00A987DF /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		1D4785091E136C8A00A987DF /* UIView+BadgeView */ = {
+			isa = PBXGroup;
+			children = (
+				1D47850A1E136C8A00A987DF /* UIView+BadgeView.h */,
+				1D47850B1E136C8A00A987DF /* UIView+BadgeView.m */,
+			);
+			path = "UIView+BadgeView";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D47485C1E12471800DFDDBC /* HLDevelopmentTips */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D47486F1E12471800DFDDBC /* Build configuration list for PBXNativeTarget "HLDevelopmentTips" */;
+			buildPhases = (
+				1D4748591E12471800DFDDBC /* Sources */,
+				1D47485A1E12471800DFDDBC /* Frameworks */,
+				1D47485B1E12471800DFDDBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HLDevelopmentTips;
+			productName = HLDevelopmentTips;
+			productReference = 1D47485D1E12471800DFDDBC /* HLDevelopmentTips.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D4748551E12471800DFDDBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "刘豪亮";
+				TargetAttributes = {
+					1D47485C1E12471800DFDDBC = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = RY9283N2XN;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1D4748581E12471800DFDDBC /* Build configuration list for PBXProject "HLDevelopmentTips" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D4748541E12471800DFDDBC;
+			productRefGroup = 1D47485E1E12471800DFDDBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D47485C1E12471800DFDDBC /* HLDevelopmentTips */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D47485B1E12471800DFDDBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D47486B1E12471800DFDDBC /* LaunchScreen.storyboard in Resources */,
+				1D47855B1E136C8A00A987DF /* 导航标题的字体设置.txt in Resources */,
+				1D47856C1E136C8A00A987DF /* 计算字符串文字个数.txt in Resources */,
+				1D47855C1E136C8A00A987DF /* 年月日的获取.txt in Resources */,
+				1D4785571E136C8A00A987DF /* 如何获得微信公众号关注页面地址? .txt in Resources */,
+				1D4785681E136C8A00A987DF /* 获取联系人姓名首字母.txt in Resources */,
+				1D4785521E136C8A00A987DF /* 各种颜色的修改.txt in Resources */,
+				1D4785621E136C8A00A987DF /* 更新xib约束.txt in Resources */,
+				1D4785611E136C8A00A987DF /* 日期格式化.txt in Resources */,
+				1D47855E1E136C8A00A987DF /* 打印系统字体.txt in Resources */,
+				1D4785381E136C8A00A987DF /* cell分割线问题.txt in Resources */,
+				1D4785371E136C8A00A987DF /* Cell分割线左边距为0.txt in Resources */,
+				1D4785581E136C8A00A987DF /* 字符串操作.doc in Resources */,
+				1D4785451E136C8A00A987DF /* UITableViewRowAction.txt in Resources */,
+				1D4785541E136C8A00A987DF /* 命令行查看视图层级.txt in Resources */,
+				1D47854B1E136C8A00A987DF /* 保存图片,视频 到相册.txt in Resources */,
+				1D4785411E136C8A00A987DF /* pch文件添加.txt in Resources */,
+				1D47853A1E136C8A00A987DF /* fix图片的转向.txt in Resources */,
+				1D4785631E136C8A00A987DF /* 监听系统生命周期.txt in Resources */,
+				1D4785671E136C8A00A987DF /* 获取系统信息.txt in Resources */,
+				1D47853F1E136C8A00A987DF /* MJRefresh使用.txt in Resources */,
+				1D4785551E136C8A00A987DF /* 图片毛玻璃效果.txt in Resources */,
+				1D47853B1E136C8A00A987DF /* GCD定时器.txt in Resources */,
+				1D4785391E136C8A00A987DF /* dyld问题.txt in Resources */,
+				1D4785691E136C8A00A987DF /* 视频，音频，拍照相关.txt in Resources */,
+				1D4785561E136C8A00A987DF /* 坐标转换.txt in Resources */,
+				1D47853D1E136C8A00A987DF /* iOS 9 使用 http 请求.txt in Resources */,
+				1D47854E1E136C8A00A987DF /* 判断网络连接.txt in Resources */,
+				1D47854F1E136C8A00A987DF /* 加载本地网页.txt in Resources */,
+				1D47853E1E136C8A00A987DF /* masonry常用关系.txt in Resources */,
+				1D4785531E136C8A00A987DF /* 启动时隐藏系统状态栏.txt in Resources */,
+				1D4785351E136C8A00A987DF /* afnetworking.txt in Resources */,
+				1D4785501E136C8A00A987DF /* 动态计算文字高度.txt in Resources */,
+				1D47856B1E136C8A00A987DF /* 解决导航和视图上下偏移.txt in Resources */,
+				1D4785641E136C8A00A987DF /* 禁用手势返回.txt in Resources */,
+				1D47856E1E136C8A00A987DF /* 跳转系统界面.txt in Resources */,
+				1D47855A1E136C8A00A987DF /* 导航按钮左右偏移的解决.txt in Resources */,
+				1D4785421E136C8A00A987DF /* push动画.txt in Resources */,
+				1D47854A1E136C8A00A987DF /* 二维码识别.txt in Resources */,
+				1D4785361E136C8A00A987DF /* ARC和非ARC.txt in Resources */,
+				1D47855F1E136C8A00A987DF /* 捕捉返回动作.txt in Resources */,
+				1D47855D1E136C8A00A987DF /* 截图.txt in Resources */,
+				1D47854C1E136C8A00A987DF /* 倒计时实现的两种方式.txt in Resources */,
+				1D4785481E136C8A00A987DF /* UIView的shadow偏移.txt in Resources */,
+				1D47856A1E136C8A00A987DF /* 解决cocoapods无法安装问题.txt in Resources */,
+				1D4785601E136C8A00A987DF /* 支持滑动删除 Cell.txt in Resources */,
+				1D47853C1E136C8A00A987DF /* iOS 8 定位.txt in Resources */,
+				1D4785591E136C8A00A987DF /* 富文本信息.txt in Resources */,
+				1D4785651E136C8A00A987DF /* 系统分享组件.txt in Resources */,
+				1D4748681E12471800DFDDBC /* Assets.xcassets in Resources */,
+				1D4785511E136C8A00A987DF /* 单元格刷新.txt in Resources */,
+				1D4785661E136C8A00A987DF /* 获取文件大小.txt in Resources */,
+				1D4785471E136C8A00A987DF /* UIView动画.txt in Resources */,
+				1D47856D1E136C8A00A987DF /* 调试阶段的NSLog.txt in Resources */,
+				1D4748661E12471800DFDDBC /* Main.storyboard in Resources */,
+				1D4785491E136C8A00A987DF /* 下拉刷新.txt in Resources */,
+				1D47854D1E136C8A00A987DF /* 关于想给约束改变添加动画.txt in Resources */,
+				1D4785441E136C8A00A987DF /* TextField属性设置.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D4748591E12471800DFDDBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D4748751E124DD800DFDDBC /* Common.swift in Sources */,
+				1D4748631E12471800DFDDBC /* ViewController.swift in Sources */,
+				1D4785401E136C8A00A987DF /* NSObject+AssociateObject.m in Sources */,
+				1D4748731E124BEA00DFDDBC /* ContentViewController.swift in Sources */,
+				1D4785431E136C8A00A987DF /* Reachability.m in Sources */,
+				1D4748611E12471800DFDDBC /* AppDelegate.swift in Sources */,
+				1D4785461E136C8A00A987DF /* UIView+BadgeView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1D4748641E12471800DFDDBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D4748651E12471800DFDDBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D4748691E12471800DFDDBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D47486A1E12471800DFDDBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D47486D1E12471800DFDDBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D47486E1E12471800DFDDBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D4748701E12471800DFDDBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RY9283N2XN;
+				INFOPLIST_FILE = HLDevelopmentTips/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aliang.HLDevelopmentTips;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1D4748711E12471800DFDDBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RY9283N2XN;
+				INFOPLIST_FILE = HLDevelopmentTips/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aliang.HLDevelopmentTips;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D4748581E12471800DFDDBC /* Build configuration list for PBXProject "HLDevelopmentTips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D47486D1E12471800DFDDBC /* Debug */,
+				1D47486E1E12471800DFDDBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D47486F1E12471800DFDDBC /* Build configuration list for PBXNativeTarget "HLDevelopmentTips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D4748701E12471800DFDDBC /* Debug */,
+				1D4748711E12471800DFDDBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D4748551E12471800DFDDBC /* Project object */;
+}
