@@ -72,6 +72,7 @@
 		1D47856C1E136C8A00A987DF /* 计算字符串文字个数.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785321E136C8A00A987DF /* 计算字符串文字个数.txt */; };
 		1D47856D1E136C8A00A987DF /* 调试阶段的NSLog.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785331E136C8A00A987DF /* 调试阶段的NSLog.txt */; };
 		1D47856E1E136C8A00A987DF /* 跳转系统界面.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D4785341E136C8A00A987DF /* 跳转系统界面.txt */; };
+		1D4785871E136E8F00A987DF /* HLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4785861E136E8F00A987DF /* HLUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -146,6 +147,7 @@
 		1D4785321E136C8A00A987DF /* 计算字符串文字个数.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "计算字符串文字个数.txt"; sourceTree = "<group>"; };
 		1D4785331E136C8A00A987DF /* 调试阶段的NSLog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "调试阶段的NSLog.txt"; sourceTree = "<group>"; };
 		1D4785341E136C8A00A987DF /* 跳转系统界面.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "跳转系统界面.txt"; sourceTree = "<group>"; };
+		1D4785861E136E8F00A987DF /* HLUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 				1D4748671E12471800DFDDBC /* Assets.xcassets */,
 				1D4748691E12471800DFDDBC /* LaunchScreen.storyboard */,
 				1D47486C1E12471800DFDDBC /* Info.plist */,
+				1D47856F1E136E0E00A987DF /* Utils */,
 				1D4784F31E136C8A00A987DF /* OC */,
 			);
 			path = HLDevelopmentTips;
@@ -282,6 +285,14 @@
 				1D47850B1E136C8A00A987DF /* UIView+BadgeView.m */,
 			);
 			path = "UIView+BadgeView";
+			sourceTree = "<group>";
+		};
+		1D47856F1E136E0E00A987DF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1D4785861E136E8F00A987DF /* HLUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +428,7 @@
 				1D4785401E136C8A00A987DF /* NSObject+AssociateObject.m in Sources */,
 				1D4748731E124BEA00DFDDBC /* ContentViewController.swift in Sources */,
 				1D4785431E136C8A00A987DF /* Reachability.m in Sources */,
+				1D4785871E136E8F00A987DF /* HLUtils.swift in Sources */,
 				1D4748611E12471800DFDDBC /* AppDelegate.swift in Sources */,
 				1D4785461E136C8A00A987DF /* UIView+BadgeView.m in Sources */,
 			);
