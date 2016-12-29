@@ -9,9 +9,6 @@
 import UIKit
 
 class Common: NSObject {
-
-    static let screen_width = UIScreen.main.bounds.size.width
-    static let screen_height = UIScreen.main.bounds.size.height
     
     static func titlesForContent() -> [String] {
         let paths = Bundle.main.paths(forResourcesOfType: "txt", inDirectory: nil)

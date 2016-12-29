@@ -12,11 +12,16 @@ class ContentViewController: UIViewController {
 
     let textView = UITextView()
 
+    convenience init(name: String) {
+        self.init()
+        self.title = name;
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.white
-        textView.frame = CGRect(x: 0, y: 0, width: Common.screen_width, height: Common.screen_height)
+        textView.frame = CGRect(x: 0, y: 0, width: HLUtils.screenWidth, height: HLUtils.screenHeight)
         
         self.view.addSubview(textView)
 

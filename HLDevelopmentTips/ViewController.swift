@@ -20,7 +20,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         self.view.backgroundColor = UIColor.white
         self.navigationItem.title = "list"
         
-        tableView.frame = CGRect(x: 0, y: 0, width: Common.screen_width, height: Common.screen_height)
+        tableView.frame = CGRect(x: 0, y: 0, width: HLUtils.screenWidth, height: HLUtils.screenHeight)
         tableView.delegate = self
         tableView.dataSource = self
         self.view.addSubview(tableView)
@@ -42,8 +42,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = ContentViewController()
-        vc.title = listArray[indexPath.row]
+        let vc = ContentViewController.init(name: listArray[indexPath.row])
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
